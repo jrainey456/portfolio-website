@@ -1,0 +1,40 @@
+.mobile-nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: flex;
+  padding: 0.7rem 1.8rem;
+  z-index: 2;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+  bottom: -100%;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+.mobile-nav > a {
+  background: transparent;
+  border-radius: 3rem;
+  color: var(--color-light);
+  display: flex;
+  font-size: 1.1rem;
+  padding: 0.9rem;
+}
+
+.mobile-nav > a:hover {
+  background: rgb(0, 0, 0, 0.3);
+}
+
+.mobile-nav > a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1040px) {
+   .mobile-nav{
+      bottom: 2rem;
+      transition: var(--transition);
+    }
+  }
+  

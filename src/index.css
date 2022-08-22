@@ -3,17 +3,13 @@
 :root {
   --color-bg: #2e3134;
   --color-bg-dark: #202124;
-  --color-bg-varient: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-bg-varient:  #353944;
+  --color-primary:  #2e3134;
+  --color-primary-variant:  #4db5ff;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
 }
 
 html {
@@ -55,19 +51,14 @@ section {
   background-color: var(--color-primary);
   width: max-content;
   display: inline-block;
-  color: var(--color-white);
+  color: var(--color-primary-variant);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-primary-variant);
 }
 
-.btn-light {
-  background: transparent;
-  color: var(--color-white);
-}
 
 .btn:hover {
-  background: pink;
-  color: purple;
+  background: transparent;
 }

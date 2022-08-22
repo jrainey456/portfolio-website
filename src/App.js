@@ -7,6 +7,7 @@ import Experience from "./components/experience/Experience.js";
 import Footer from "./components/footer/Footer.js";
 import NavBar from "./components/navbar/NavBar.js";
 import Portfolio from "./components/portfolio/Portfolio.js";
+import MobileNav from "./components/mobilenav/MobileNav";
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <NavBar />
       <Header />
+      <MobileNav />
       <About />
       <Experience />
       <Portfolio />
