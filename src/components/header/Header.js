@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import rain from "../../assets/mp4/bridge.mp4";
-import { FaCloudMoonRain } from "react-icons/fa";
 
 export default function Header() {
   return (
