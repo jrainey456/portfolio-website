@@ -44,8 +44,13 @@
 }
 
 @media screen and (max-width: 1040px) {
-  .nav-menu{
+  .nav-menu {
     display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo-text {
+    font-size: 1rem;
   }
 }
 
