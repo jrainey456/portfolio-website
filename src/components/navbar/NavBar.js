@@ -38,20 +38,23 @@ export default function NavBar() {
           Experience
         </a>
         <a
-          href="#portfolio"
-          onClick={() => setActive("#portfolio")}
-          className={active === "#portfolio" ? "active" : ""}
+          href="#projects"
+          onClick={() => setActive("#projects")}
+          className={active === "#projects" ? "active" : ""}
         >
-          Portfolio
+          Projects
         </a>
-        <a
+      </div>
+    </div>
+  );
+}
+
+/*
+<a
           href="#contact"
           onClick={() => setActive("#contact")}
           className={active === "#contact" ? "active" : ""}
         >
           Contact
         </a>
-      </div>
-    </div>
-  );
-}
+*/

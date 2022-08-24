@@ -1,0 +1,60 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 800px;
+  gap: 30px;
+}
+
+.projects-container > h1 {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+.projects-container > .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.projects-container .card-container > .card {
+  text-align: center;
+  width: 250px;
+  height: 300px;
+}
+
+.projects-container > .card-container > .card:hover {
+  top: -20px;
+}
+
+.projects-container > .card-container > .card > .card-header {
+  font-size: 30px;
+}
+
+.projects-container > .card-container > .card > .card-header > h1 {
+  font-size: 25px;
+}
+
+.projects-container > .card-container > .card > .card-header > h6 {
+  font-size: 15px;
+}
+
+.projects-container > .card-container > .card > .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  flex-direction: column;
+  font-size: 17px;
+  gap: 5px;
+}
+
+@media screen and (max-width: 1040px) {
+  .card-container {
+    flex-direction: column;
+  }
+}

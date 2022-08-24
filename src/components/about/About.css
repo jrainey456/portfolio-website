@@ -1,3 +1,26 @@
 .about-container {
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  height: 600px;
+}
+
+.about-container > h1 {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+.text-box {
+  color: var(--color-light);
+  font-size: 1.5rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 1040px) {
+  .text-box {
+    padding-top: 50px;
+    font-size: 1rem;
+  }
 }

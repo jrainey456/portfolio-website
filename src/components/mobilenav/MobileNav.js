@@ -30,12 +30,17 @@ export default function MobileNav() {
         <BsBook />
       </a>
       <a
-        href="#portfolio"
-        onClick={() => setActive("#portfolio")}
-        className={active === "#portfolio" ? "active" : ""}
+        href="#projects"
+        onClick={() => setActive("#projects")}
+        className={active === "#projects" ? "active" : ""}
       >
         <BsCodeSquare />
       </a>
+    </nav>
+  );
+}
+
+/*
       <a
         href="#contact"
         onClick={() => setActive("#contact")}
@@ -43,6 +48,4 @@ export default function MobileNav() {
       >
         <AiOutlineMessage />
       </a>
-    </nav>
-  );
-}
+*/

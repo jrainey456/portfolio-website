@@ -3,9 +3,9 @@
 :root {
   --color-bg: #2e3134;
   --color-bg-dark: #202124;
-  --color-bg-varient:  #353944;
-  --color-primary:  #2e3134;
-  --color-primary-variant:  #4db5ff;
+  --color-bg-varient: #353944;
+  --color-primary: #2e3134;
+  --color-primary-variant: #4db5ff;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -14,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 ::-webkit-scrollbar {
@@ -58,7 +59,20 @@ section {
   border: 1px solid var(--color-primary-variant);
 }
 
-
 .btn:hover {
   background: transparent;
 }
+
+.card {
+  border: 1px solid var(--color-primary-variant);
+  background-color: var(--color-primary);
+  transition: var(--transition);
+  color: var(--color-light);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  top: 0;
+  position: relative;
+}
+
+
