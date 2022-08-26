@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaCloudMoonRain } from "react-icons/fa";
 import "./NavBar.css";
 
@@ -13,6 +13,28 @@ export default function NavBar() {
       setNavColor(false);
     }
   };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.id != "#") {
+              setActive("#" + entry.target.id);
+            } else {
+              setActive(entry.target.id);
+            }
+          }
+        });
+      },
+      { threshold: 1 }
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
 
   window.addEventListener("scroll", changeColor);
 
