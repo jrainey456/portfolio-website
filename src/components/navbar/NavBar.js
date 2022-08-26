@@ -66,6 +66,14 @@ export default function NavBar() {
         >
           Projects
         </a>
+
+        <a
+          href="#contact"
+          onClick={() => setActive("#contact")}
+          className={active === "#contact" ? "active" : ""}
+        >
+          Contact
+        </a>
       </div>
     </div>
   );

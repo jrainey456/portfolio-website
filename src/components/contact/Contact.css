@@ -1,4 +1,72 @@
 .contact-container {
-  height: 600px;
-  padding-top: 100px;
+  min-height: 600px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contact-container > h1 {
+  padding: 40px;
+  font-size: 2rem;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container > .form-container > form > .button-container {
+  margin-left: auto;
+}
+
+button {
+  transition: var(--transition);
+  text-decoration: none;
+  background-color: var(--color-primary-variant);
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary-variant);
+}
+
+button:hover {
+  background: transparent;
+  color: var(--color-primary-variant);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  transition: var(--transition);
+  width: 600px;
+  color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--color-white);
+  resize: none;
+}
+
+input:focus {
+  border: 1px solid var(--color-primary-variant);
+}
+
+textarea:focus {
+  border: 1px solid var(--color-primary-variant);
+}
+
+@media screen and (max-width: 640px) {
+  input,
+  textarea {
+    width: 350px;
+  }
 }

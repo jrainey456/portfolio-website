@@ -6,10 +6,10 @@ import { BsGithub } from "react-icons/bs";
 export default function Socials() {
   return (
     <div className="socials-container">
-      <a>
+      <a href="https://www.linkedin.com/in/john-rainey-a324309a/">
         <FaLinkedin />
       </a>
-      <a>
+      <a href="https://github.com/jrainey456">
         <BsGithub />
       </a>
     </div>
