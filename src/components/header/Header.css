@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  
   height: 100vh;
   width: 100%;
   background: transparent;
@@ -54,20 +53,28 @@ video {
   padding: 0.6rem 0 1.5rem;
 }
 
-.header-container > .content > .btn {
-  margin: 1rem 0.2rem;
+.header-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
 }
 
 @media screen and (max-width: 640px) {
-  .content > h1 {
+  .header-container > .content > h1 {
     font-size: 2rem;
   }
 
-  .content > h5 {
+  .header-container > .content > h5 {
     font-size: 1rem;
   }
 
-  .content > .btn {
+  .header-container > .content > .btn {
     font-size: 1rem;
+  }
+
+  .header-button-container {
+    flex-direction: column;
   }
 }
