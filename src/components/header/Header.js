@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import rain from "../../assets/mp4/bridge.mp4";
+import Resume from "../../assets/misc/Resume.pdf"
 
 export default function Header() {
   return (
@@ -19,6 +20,9 @@ export default function Header() {
         </a>
         <a href="#about" className="btn">
           ABOUT
+        </a>
+        <a href={Resume} download className="btn">
+          RESUME
         </a>
       </div>
     </section>
