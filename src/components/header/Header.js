@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import rain from "../../assets/mp4/bridge.mp4";
+import Resume from "../../assets/misc/Resume.pdf";
 
 export default function Header() {
   return (
@@ -14,12 +15,17 @@ export default function Header() {
         <h5>Hello I'm</h5>
         <h1>John Rainey</h1>
         <h5>Fullstack Developer</h5>
-        <a href="#portfolio" className="btn">
-          PORTFOLIO
-        </a>
-        <a href="#about" className="btn">
-          ABOUT
-        </a>
+        <div className="header-button-container">
+          <a href="#projects" className="btn">
+            PROJECTS
+          </a>
+          <a href="#about" className="btn">
+            ABOUT
+          </a>
+          <a href={Resume} download className="btn">
+            RESUME
+          </a>
+        </div>
       </div>
     </section>
   );

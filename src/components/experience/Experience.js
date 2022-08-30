@@ -7,14 +7,14 @@ export default function Experience() {
   return (
     <section className="experience-container" id="experience">
       <h1>Experience</h1>
-      <div className="card-container">
-        <div className="card">
-          <div className="card-header">
+      <div className="experience-card-container">
+        <div className="experience-card">
+          <div className="experience-card-header">
             <FaNodeJs />
             <h1>Node.js</h1>
             <h6>2+ years</h6>
           </div>
-          <div className="card-body">
+          <div className="experience-card-body">
             <p> Express API's </p>
             <p> Database Connections </p>
             <p> LDAP authentication</p>
@@ -22,13 +22,13 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="card">
-          <div className="card-header">
+        <div className="experience-card">
+          <div className="experience-card-header">
             <FaReact />
             <h1>React</h1>
             <h6>3+ years</h6>
           </div>
-          <div className="card-body">
+          <div className="experience-card-body">
             <p> Live Dashboards </p>
             <p> Web Applications </p>
             <p> React Router </p>
@@ -36,13 +36,13 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="card">
-          <div className="card-header">
+        <div className="experience-card">
+          <div className="experience-card-header">
             <AiOutlineConsoleSql />
             <h1>SQL Database</h1>
             <h6>4+ years</h6>
           </div>
-          <div className="card-body">
+          <div className="experience-card-body">
             <p>Environment Setup</p>
             <p> Table Design </p>
             <p>Complex Queries</p>

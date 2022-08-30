@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  height: 600px;
+  min-height: 800px;
 }
 
 .about-container > h1 {
